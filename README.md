@@ -82,10 +82,10 @@ You need to install `jotai` in your project (`~6 kB` gzipped) to use `react-resp
 ### Using Breakpoint Library presets:
 In App:
 ```tsx
-    const { addListeners } = useReactResponsiveness();
-    React.useLayoutEffect(() => {
-        addListeners(Presets.Tailwind_CSS);
-    }, []);
+const { addListeners } = useReactResponsiveness();
+React.useLayoutEffect(() => {
+    addListeners(Presets.Tailwind_CSS);
+}, []);
 ```
 All available presets:
 
@@ -98,14 +98,14 @@ All available presets:
 ### Bespoke intervals:
 In App:
 ```ts
-    const { addListeners } = useReactResponsiveness();
-    React.useLayoutEffect(() => {
-        addListeners({
-            small: 0,
-            medium: 777,
-            large: 1234
-        });
-    }, []);
+const { addListeners } = useReactResponsiveness();
+React.useLayoutEffect(() => {
+    addListeners({
+        small: 0,
+        medium: 777,
+        large: 1234
+    });
+}, []);
 ```
 ... then, in any component, including App: 
 ```tsx
