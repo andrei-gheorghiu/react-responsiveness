@@ -1,3 +1,4 @@
+import * as React from "react";
 import {
   ReactResponsivenessBreakpoints,
   ReactResponsivenessMatches,
@@ -67,8 +68,19 @@ export const useReactResponsiveness = () => {
       });
     });
   };
-  const isMin = (interval: string) => matches?.[interval]?.min;
-  const isMax = (interval: string) => matches?.[interval]?.max;
-  const isOnly = (interval: string) => matches?.[interval]?.only;
+
+  const isMin = React.useCallback(
+    (interval: string) => matches?.[interval]?.min,
+    [matches]
+  );
+  const isMax = React.useCallback(
+    (interval: string) => matches?.[interval]?.max,
+    [matches]
+  );
+  const isOnly = React.useCallback(
+    (interval: string) => matches?.[interval]?.only,
+    [matches]
+  );
+
   return { addListeners, isMin, isMax, isOnly, currentInterval, matches };
 };
