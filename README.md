@@ -31,9 +31,9 @@ npm i react-responsiveness
 
 <sup>*</sup> you need these deps in your project to use `react-responsiveness`
 
-### Basic demo
+### Demo
 
-https://codesandbox.io/p/sandbox/react-resposiveness-hmir0z
+[codesandbox](https://codesandbox.io/p/github/codesandbox/codesandbox-template-vite-react/csb-ss87sf/react-responsiveness?file=%2Fsrc%2FApp.tsx).
 
 ### Usage
 
