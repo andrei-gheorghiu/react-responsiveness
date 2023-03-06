@@ -9,10 +9,7 @@ export default defineConfig({
       entry: resolve(__dirname, "lib/index.ts"),
       name: "ReactResponsiveness",
       formats: ["es", "umd"],
-      fileName: (format) =>
-        `react-responsiveness.${format !== "es" ? format + "." : ""}${
-          format === "umd" ? "c" : ""
-        }js`,
+      fileName: "react-responsiveness",
     },
     rollupOptions: {
       external: ["react", "react-dom", "jotai"],

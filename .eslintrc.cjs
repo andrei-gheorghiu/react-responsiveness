@@ -18,8 +18,12 @@ module.exports = {
     sourceType: "module",
   },
   plugins: ["react", "@typescript-eslint", "prettier"],
+  settings: {
+    react: {
+      version: "detect"
+    }
+  },
   rules: {
     "prettier/prettier": "error",
   },
-  ignorePatterns: ["dist/*"],
 };

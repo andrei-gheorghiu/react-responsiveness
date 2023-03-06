@@ -8,11 +8,9 @@
     "jsx": "react-jsx",
     "resolveJsonModule": true,
     "esModuleInterop": true,
-    "lib": ["DOM", "DOM.Iterable", "ES2017", "ESNext"],
-    "allowJs": false,
+    "lib": ["DOM", "ESNext"],
+    "allowJs": true,
     "skipLibCheck": true,
-    "allowSyntheticDefaultImports": true,
-    "forceConsistentCasingInFileNames": true,
     "noEmit": true
   },
   "include": ["src"],
