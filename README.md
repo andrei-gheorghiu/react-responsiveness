@@ -56,27 +56,25 @@ Can be in any other component, but I recommend App as it's first to render. This
 ```tsx
 import { useReactResponsiveness } from "react-responsiveness";
 
-const { matches, currentInterval } = useReactResponsiveness()
+const { isMin, isMax, isOnly, currentInterval } = useReactResponsiveness()
     
 return (<>
    <div>Current interval {currentInterval}</div>
-   {matches.sm.min && (
-       <!-- sm and above => @media (min-width: 576px) -->
+   {isMin('sm') && (
+       <!-- @media (min-width: 576px) -->
        <div>content...</div>
    )}
-   {matches.sm.max && (
-       <!-- sm and below => @media (max-width: 767.9px) -->
+   {isMax('sm') && (
+       <!-- @media (max-width: 767.9px) -->
        <div>content...</div>
    )}
-   {matches.sm.only && (
-       <!-- sm only => @media (min-width: 576px) and (max-width: 767.9px) -->
+   {isOnly('sm') && (
+       <!-- @media (min-width: 576px) and (max-width: 767.9px) -->
        <div>content...</div>
    )}
 </>)
 ```
 #### Important notes
-- `matches`'s keys are defined by the config object. It maches the interval names of the library preset you're using
-- every `matches[key]` has three props, all boolean: `min`, `max` and `only`. `only` is `true` when both `min` and `max` are `true`
 - It is only required to call `addListeners` once per page/app. `matches` and `currentInterval` are shared state across all components using the hook.
 - The plugin uses `jotai` for sharing state across components (it's much like Recoil, except smaller). 
 You need to install `jotai` in your project (`~6 kB` gzipped) to use `react-responsiveness`.
@@ -111,10 +109,10 @@ In App:
 ```
 ... then, in any component, including App: 
 ```tsx
-const { matches } = useReactResponsiveness()
+const { isOnly } = useReactResponsiveness()
 
 return (<>
-    {matches.medium.only && (
+    {isOnly('medium') && (
         <!-- @media (min-width: 777px) and (max-width: 1233.9px) -->
         <div>content...</div>
     )}
