@@ -1,0 +1,48 @@
+{
+  "name": "react-responsiveness",
+  "private": true,
+  "version": "0.0.1-alpha.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "files": [
+    "dist"
+  ],
+  "types": "./dist/index.d.ts",
+  "main": "./dist/react-responsiveness.umd.js",
+  "module": "./dist/react-responsiveness.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/react-responsiveness.es.js",
+      "require": "./dist/react-responsiveness.umd.js"
+    }
+  },
+  "dependencies": {},
+  "peerDependencies": {
+    "react": ">= 16.x",
+    "react-dom": ">= 16.x",
+    "jotai": ">= 1.x"
+  },
+  "devDependencies": {
+    "@types/node": "^16.14.2",
+    "@types/react": "^18.0.27",
+    "@types/react-dom": "^18.0.10",
+    "@typescript-eslint/eslint-plugin": "^5.54.0",
+    "@typescript-eslint/parser": "^5.54.0",
+    "@vitejs/plugin-react": "^3.1.0",
+    "eslint": "^8.35.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.32.2",
+    "jotai": "^2.0.3",
+    "prettier": "^2.8.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "typescript": "^4.9.3",
+    "vite": "^4.1.0",
+    "vite-plugin-dts": "^2.0.2"
+  }
+}
