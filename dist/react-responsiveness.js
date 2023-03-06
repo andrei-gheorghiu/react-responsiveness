@@ -1,5 +1,5 @@
-import { atom as _, useAtom as u, useAtomValue as f } from "jotai";
-const w = {
+import { atom as p, useAtom as u, useAtomValue as M } from "jotai";
+const f = {
   Bootstrap_3: {
     xs: 0,
     sm: 576,
@@ -106,55 +106,64 @@ const w = {
     xl: 1280,
     "2xl": 1536
   }
-}, b = _({}), j = _(
-  (i) => {
-    var e;
-    return ((e = Object.entries(i(b)).find(([, m]) => m == null ? void 0 : m.only)) == null ? void 0 : e[0]) || "";
+}, h = p({}), w = p(
+  (s) => {
+    var o;
+    return ((o = Object.entries(s(h)).find(([, m]) => m == null ? void 0 : m.only)) == null ? void 0 : o[0]) || "";
   }
-), O = () => {
-  const [i, e] = u(b), m = f(j);
-  return { addListeners: (p = w.Bootstrap_5) => {
-    const x = Object.entries(p).sort(([, s], [, t]) => (s || 0) - (t || 0)).reduce((s, [t, a], n, l) => {
-      var o;
-      return s[t] = {
-        min: a ? `(min-width: ${a}px)` : "",
-        max: (o = l[n + 1]) != null && o[1] ? `(max-width: ${l[n + 1][1] - 0.1}px)` : ""
-      }, s;
+), B = () => {
+  const [s, o] = u(h), m = M(w);
+  return { addListeners: (l = f.Bootstrap_5) => {
+    const t = Object.entries(l).sort(([, e], [, n]) => (e || 0) - (n || 0)).reduce((e, [n, x], i, a) => {
+      var r;
+      return e[n] = {
+        min: x ? `(min-width: ${x}px)` : "",
+        max: (r = a[i + 1]) != null && r[1] ? `(max-width: ${a[i + 1][1] - 0.1}px)` : ""
+      }, e;
     }, {});
-    e(
-      (s) => Object.assign(
-        s,
-        ...Object.keys(x).map((t) => ({
-          [t]: { min: !1, max: !1, only: !1 }
+    o(
+      (e) => Object.assign(
+        e,
+        ...Object.keys(t).map((n) => ({
+          [n]: { min: !1, max: !1, only: !1 }
         }))
       )
-    ), Object.entries(x).forEach(([s, t]) => {
-      const a = {
-        min: window.matchMedia(t.min),
-        max: window.matchMedia(t.max)
+    ), Object.entries(t).forEach(([e, n]) => {
+      const x = {
+        min: window.matchMedia(n.min),
+        max: window.matchMedia(n.max)
       };
-      Object.entries(a).forEach(([n, l]) => {
-        const o = ({ matches: c }) => {
-          e((r) => {
-            var h;
-            if (((h = r[s]) == null ? void 0 : h[n]) === c)
-              return r;
-            const { min: d, max: g } = {
-              ...r[s],
-              [n]: c
+      Object.entries(x).forEach(([i, a]) => {
+        const r = ({ matches: c }) => {
+          o((d) => {
+            var b;
+            if (((b = d[e]) == null ? void 0 : b[i]) === c)
+              return d;
+            const { min: g, max: _ } = {
+              ...d[e],
+              [i]: c
             };
             return {
-              ...r,
-              [s]: { min: d, max: g, only: d && g }
+              ...d,
+              [e]: { min: g, max: _, only: g && _ }
             };
           });
         };
-        l.addEventListener("change", o), o(l);
+        a.addEventListener("change", r), r(a);
       });
     });
-  }, matches: i, currentInterval: m };
+  }, isMin: (l) => {
+    var t;
+    return (t = s == null ? void 0 : s[l]) == null ? void 0 : t.min;
+  }, isMax: (l) => {
+    var t;
+    return (t = s == null ? void 0 : s[l]) == null ? void 0 : t.max;
+  }, isOnly: (l) => {
+    var t;
+    return (t = s == null ? void 0 : s[l]) == null ? void 0 : t.only;
+  }, currentInterval: m, matches: s };
 };
 export {
-  w as Presets,
-  O as useReactResponsiveness
+  f as Presets,
+  B as useReactResponsiveness
 };

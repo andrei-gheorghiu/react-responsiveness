@@ -67,5 +67,8 @@ export const useReactResponsiveness = () => {
       });
     });
   };
-  return { addListeners, matches, currentInterval };
+  const isMin = (interval: string) => matches?.[interval]?.min;
+  const isMax = (interval: string) => matches?.[interval]?.max;
+  const isOnly = (interval: string) => matches?.[interval]?.only;
+  return { addListeners, isMin, isMax, isOnly, currentInterval, matches };
 };
