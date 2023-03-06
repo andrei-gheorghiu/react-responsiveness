@@ -4,7 +4,7 @@
 <a href="https://www.npmjs.com/package/react-responsiveness"><img src="https://img.shields.io/npm/dt/react-responsiveness.svg" alt="Total Downloads"></a>
 <a href="https://www.npmjs.com/package/react-responsiveness"><img src="https://img.shields.io/npm/v/react-responsiveness.svg" alt="Latest Release"></a>
 <a href="https://github.com/andrei-gheorghiu/react-responsiveness/blob/main/LICENSE.MD"><img src="https://img.shields.io/npm/l/react-responsiveness.svg" alt="License"></a>
-<img src="https://img.shields.io/badge/dependencies-0-brightgreen.svg" alt="Dependencies" />
+<a href="https://github.com/andrei-gheorghiu/react-responsiveness/blob/main/package.json#L27"><img src="https://img.shields.io/badge/dependencies-0-brightgreen.svg" alt="Dependencies" /></a>
 <a href="https://unpkg.com/react-responsiveness"><img src="https://img.badgesize.io/https://unpkg.com/react-responsiveness.svg?compression=gzip&label=umd:minzip" alt="unpkg umd min:gzip size" /></a>
 <a href="https://circleci.com/gh/andrei-gheorghiu/react-responsiveness/tree/main"><img src="https://circleci.com/gh/andrei-gheorghiu/react-responsiveness/tree/main.svg?style=svg" alt="CircleCI" /></a>
 <a href="https://makeapullrequest.com"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square" alt="PRs Welcome"/></a>
