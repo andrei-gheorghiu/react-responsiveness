@@ -12,12 +12,12 @@
     "dist"
   ],
   "types": "./dist/index.d.ts",
-  "main": "./dist/react-responsiveness.umd.js",
+  "main": "./dist/react-responsiveness.umd.cjs",
   "module": "./dist/react-responsiveness.es.js",
   "exports": {
     ".": {
       "import": "./dist/react-responsiveness.es.js",
-      "require": "./dist/react-responsiveness.umd.js"
+      "require": "./dist/react-responsiveness.umd.cjs"
     }
   },
   "dependencies": {},
