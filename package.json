@@ -13,10 +13,10 @@
   ],
   "types": "./dist/index.d.ts",
   "main": "./dist/react-responsiveness.umd.cjs",
-  "module": "./dist/react-responsiveness.es.js",
+  "module": "./dist/react-responsiveness.js",
   "exports": {
     ".": {
-      "import": "./dist/react-responsiveness.es.js",
+      "import": "./dist/react-responsiveness.js",
       "require": "./dist/react-responsiveness.umd.cjs"
     }
   },
