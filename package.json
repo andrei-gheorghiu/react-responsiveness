@@ -10,9 +10,10 @@
     "preview": "vite preview"
   },
   "files": [
-    "dist"
+    "dist",
+    "lib"
   ],
-  "types": "./dist/index.d.ts",
+  "types": "./lib/index.ts",
   "main": "./dist/react-responsiveness.umd.cjs",
   "module": "./dist/react-responsiveness.js",
   "exports": {

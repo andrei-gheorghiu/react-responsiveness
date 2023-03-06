@@ -1,6 +1,6 @@
 import * as React from "react";
 import "./App.css";
-import { useReactResponsiveness } from "./lib";
+import { useReactResponsiveness } from "../lib";
 
 function App() {
   const { addListeners, currentInterval } = useReactResponsiveness();
