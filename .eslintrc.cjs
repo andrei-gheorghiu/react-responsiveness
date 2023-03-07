@@ -23,6 +23,7 @@ module.exports = {
       version: "detect"
     }
   },
+  ignorePatterns: ['dist/*'],
   rules: {
     "prettier/prettier": "error",
   },

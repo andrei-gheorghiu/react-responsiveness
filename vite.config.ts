@@ -12,12 +12,11 @@ export default defineConfig({
       fileName: "react-responsiveness",
     },
     rollupOptions: {
-      external: ["react", "react-dom", "jotai"],
+      external: ["react", "react-dom"],
       output: {
         globals: {
           react: "React",
-          "react-dom": "ReactDOM",
-          jotai: "jotai",
+          "react-dom": "ReactDom",
         },
       },
     },

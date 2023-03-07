@@ -13,7 +13,7 @@ function App() {
     <div className="App">
       <TestComponent />
       <div>Current: {currentInterval}</div>
-      { isMax('')}
+      {isMax("")}
     </div>
   );
 }
