@@ -2,7 +2,7 @@
   "name": "react-responsiveness",
   "private": false,
   "license": "MIT",
-  "version": "0.0.4-alpha-0",
+  "version": "0.0.4",
   "type": "module",
   "repository": "github:andrei-gheorghiu/react-responsiveness",
   "scripts": {
