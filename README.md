@@ -74,15 +74,15 @@ const { isMin, isMax, isOnly, currentInterval } = useResponsiveness()
 return (<>
    <div>Current interval {currentInterval}</div>
    {isMin('md') && (
-       <!-- @media (min-width: 768px) -->
+       // @media (min-width: 768px)
        <div>content...</div>
    )}
    {isMax('md') && (
-       <!-- @media (max-width: 991.9px) -->
+       // @media (max-width: 991.9px)
        <div>content...</div>
    )}
    {isOnly('md') && (
-       <!-- @media (min-width: 768px) and (max-width: 991.9px) -->
+       // @media (min-width: 768px) and (max-width: 991.9px)
        <div>content...</div>
    )}
 </>)
@@ -118,7 +118,7 @@ const { isOnly } = useResponsiveness()
 
 return (<>
     {isOnly('medium') && (
-        <!-- @media (min-width: 777px) and (max-width: 1233.9px) -->
+        // @media (min-width: 777px) and (max-width: 1233.9px)
         <div>content...</div>
     )}
 </>)
