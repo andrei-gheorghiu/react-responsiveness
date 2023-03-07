@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "es2005",
+    "target": "es2015",
     "useDefineForClassFields": true,
     "module": "ESNext",
     "strict": true,
