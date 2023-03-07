@@ -38,16 +38,16 @@ npm i react-responsiveness
 
 ```tsx
 import { ResponsivenessProvider, Presets } from "react-responsiveness";
+
+function App() {
+    // ...
+}
+
 const WithResponsiveness = () => (
   <ResponsivenessProvider breakpoints={Presets.Bootstrap_5}>
     <App />
   </ResponsivenessProvider>
 );
-
-function App() {
-  // ...
-}
-
 export default WithResponsiveness;
 ```
 
