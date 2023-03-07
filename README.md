@@ -30,7 +30,7 @@ npm i react-responsiveness
 
 ## Demo
 
-[codesandbox](https://codesandbox.io/p/github/codesandbox/codesandbox-template-vite-react/csb-ss87sf/react-responsiveness?file=%2Fsrc%2FApp.tsx).
+[codesandbox](https://codesandbox.io/p/github/codesandbox/codesandbox-template-vite-react/csb-ss87sf/react-responsiveness-v1?file=%2Fsrc%2FApp.tsx).
 
 ## Usage
 
