@@ -3,10 +3,10 @@
 <p>
 <a href="https://www.npmjs.com/package/react-responsiveness"><img src="https://img.shields.io/npm/dt/react-responsiveness.svg" alt="Total Downloads"></a>
 <a href="https://www.npmjs.com/package/react-responsiveness"><img src="https://img.shields.io/npm/v/react-responsiveness.svg" alt="Latest Release"></a>
-<a href="https://github.com/andrei-gheorghiu/react-responsiveness/blob/main/LICENSE.MD"><img src="https://img.shields.io/npm/l/react-responsiveness.svg" alt="License"></a>
-<a href="https://github.com/andrei-gheorghiu/react-responsiveness/blob/main/package.json#L27"><img src="https://img.shields.io/badge/dependencies-0-brightgreen.svg" alt="Dependencies" /></a>
+<a href="https://github.com/codemonk-digital/react-responsiveness/blob/main/LICENSE.MD"><img src="https://img.shields.io/npm/l/react-responsiveness.svg" alt="License"></a>
+<a href="https://github.com/codemonk-digital/react-responsiveness/blob/main/package.json#L27"><img src="https://img.shields.io/badge/dependencies-0-brightgreen.svg" alt="Dependencies" /></a>
 <a href="https://unpkg.com/react-responsiveness"><img src="https://img.badgesize.io/https://unpkg.com/react-responsiveness.svg?compression=gzip&label=umd:minzip" alt="unpkg umd min:gzip size" /></a>
-<a href="https://circleci.com/gh/andrei-gheorghiu/react-responsiveness/tree/main"><img src="https://circleci.com/gh/andrei-gheorghiu/react-responsiveness/tree/main.svg?style=svg" alt="CircleCI" /></a>
+<a href="https://circleci.com/gh/codemonk-digital/react-responsiveness/tree/main"><img src="https://circleci.com/gh/codemonk-digital/react-responsiveness/tree/main.svg?style=svg" alt="CircleCI" /></a>
 <a href="https://makeapullrequest.com"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square" alt="PRs Welcome"/></a>
 </p>
 Tiny plugin for working with responsiveness intervals, developed with a focus on ease of use and runtime performance.
@@ -94,8 +94,8 @@ return (<>
 
 **Notes:**
 
-- If you maintain a CSS framework (or use one often) and want its preset added, [open an issue](https://github.com/andrei-gheorghiu/react-responsiveness/issues) or a PR.
-- If you spot any inaccuracy in [presets](https://github.com/andrei-gheorghiu/react-responsiveness/blob/main/lib/presets.ts) (either typo or due to library update), please, let me know, I'll correct it.
+- If you maintain a CSS framework (or use one often) and want its preset added, [open an issue](https://github.com/codemonk-digital/react-responsiveness/issues) or a PR.
+- If you spot any inaccuracy in [presets](https://github.com/codemonk-digital/react-responsiveness/blob/main/lib/presets.ts) (either typo or due to library update), please, let me know, I'll correct it.
 
 ## Bespoke intervals:
 
@@ -133,4 +133,4 @@ return (<>
 
 ## Got issues?
 
-[Let me know!](https://github.com/andrei-gheorghiu/react-responsiveness/issues)
+[Let me know!](https://github.com/codemonk-digital/react-responsiveness/issues)

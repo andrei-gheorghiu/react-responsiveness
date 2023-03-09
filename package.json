@@ -4,7 +4,7 @@
   "license": "MIT",
   "version": "0.0.5",
   "type": "module",
-  "repository": "github:andrei-gheorghiu/react-responsiveness",
+  "repository": "github:codemonk-digital/react-responsiveness",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
