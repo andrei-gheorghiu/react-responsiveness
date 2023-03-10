@@ -77,6 +77,8 @@
     "tailwind",
     "tailwindcss",
     "windi",
-    "windicss"
+    "windicss",
+    "ssr",
+    "ssr compatible"
   ]
 }
