@@ -49,34 +49,36 @@ export const ResponsivenessProvider: React.FC<ResponsivenessContextProps> = ({
     )
   );
   React.useLayoutEffect(() => {
-    Object.entries(intervals).forEach(([interval, mediaQueries]) => {
-      const queryLists: Record<"min" | "max", MediaQueryList> = {
-        min: window.matchMedia(mediaQueries.min),
-        max: window.matchMedia(mediaQueries.max),
-      };
-      Object.entries(queryLists).forEach(([key, mediaQueryList]) => {
-        const listener = ({ matches: val }: { matches: boolean }) =>
-          setMatches((prev) => {
-            if (prev[interval]?.[key as "min" | "max"] === val) {
-              return prev;
-            }
-            const { min, max } = {
-              ...prev[interval],
-              [key]: val,
-            } as Matcher;
-            interval !== currentInterval &&
-              min &&
-              max &&
-              setCurrentInterval(interval);
-            return {
-              ...prev,
-              [interval]: { min, max, only: min && max },
-            };
-          });
-        mediaQueryList.addEventListener("change", listener);
-        listener(mediaQueryList);
+    if (typeof window !== "undefined") {
+      Object.entries(intervals).forEach(([interval, mediaQueries]) => {
+        const queryLists: Record<"min" | "max", MediaQueryList> = {
+          min: window.matchMedia(mediaQueries.min),
+          max: window.matchMedia(mediaQueries.max),
+        };
+        Object.entries(queryLists).forEach(([key, mediaQueryList]) => {
+          const listener = ({ matches: val }: { matches: boolean }) =>
+            setMatches((prev) => {
+              if (prev[interval]?.[key as "min" | "max"] === val) {
+                return prev;
+              }
+              const { min, max } = {
+                ...prev[interval],
+                [key]: val,
+              } as Matcher;
+              interval !== currentInterval &&
+                min &&
+                max &&
+                setCurrentInterval(interval);
+              return {
+                ...prev,
+                [interval]: { min, max, only: min && max },
+              };
+            });
+          mediaQueryList.addEventListener("change", listener);
+          listener(mediaQueryList);
+        });
       });
-    });
+    }
   }, [breakpoints]);
 
   const isMin = (interval: string): boolean => matches[interval]?.min || false;
