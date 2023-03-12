@@ -8,7 +8,7 @@
 <a href="https://github.com/codemonk-digital/react-responsiveness/blob/main/LICENSE.MD"><img src="https://img.shields.io/npm/l/react-responsiveness.svg?color=f9d342&style=flat-square" alt="License"></a>
 <a href="https://github.com/codemonk-digital/react-responsiveness/blob/main/package.json#L27"><img src="https://img.shields.io/badge/dependencies-0-f9d342.svg?style=flat-square" alt="Dependencies" /></a>
 <a href="https://unpkg.com/react-responsiveness"><img src="https://img.badgesize.io/https://unpkg.com/react-responsiveness.svg?compression=gzip&label=umd:minzip&color=f9d342&style=flat-square" alt="unpkg umd min:gzip size" /></a>
-<img src="https://img.shields.io/badge/SSR-compatible-f9d342?style=flat-square" alt="SSR compatibility status"/>
+<img src="https://img.shields.io/badge/SSR-ready-f9d342?style=flat-square" alt="SSR compatibility status"/>
 <a href="https://makeapullrequest.com"><img src="https://img.shields.io/badge/PRs-welcome-f9d342.svg?style=flat-square" alt="PRs Welcome"/></a>
 </p>
 Tiny plugin for working with responsiveness intervals, developed with a focus on ease of use and runtime performance.

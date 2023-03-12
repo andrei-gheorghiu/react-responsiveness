@@ -4,10 +4,10 @@ module.exports = {
     es2021: true,
   },
   extends: [
-    "eslint:recommended",
-    "plugin:react/recommended",
-    "plugin:@typescript-eslint/recommended",
-    "prettier",
+    'eslint:recommended',
+    'plugin:react/recommended',
+    'plugin:@typescript-eslint/recommended',
+    'prettier',
   ],
   parser: "@typescript-eslint/parser",
   parserOptions: {
@@ -25,6 +25,15 @@ module.exports = {
   },
   ignorePatterns: ['dist/*'],
   rules: {
-    "prettier/prettier": "error",
+    'arrow-body-style': 0,
+    'prefer-arrow-callback': 0,
+    'prettier/prettier': [
+      2,
+      {
+        singleQuote: true,
+        trailingComma: 'none',
+        semi: false
+      }
+    ]
   },
 };
