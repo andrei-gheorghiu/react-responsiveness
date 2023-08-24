@@ -31,7 +31,7 @@ npm i react-responsiveness
 
 ## Demo
 
-[codesandbox](https://codesandbox.io/p/github/codesandbox/codesandbox-template-vite-react/csb-ss87sf/react-responsiveness-v1?file=%2Fsrc%2FApp.tsx).
+[codesandbox](https://codesandbox.io/p/sandbox/react-responsiveness-lx3789?file=/src/App.tsx).
 
 ## Usage
 
@@ -133,6 +133,22 @@ return (<>
     )}
 </>)
 ```
+## F.A.Q.
+<details>
+    <summary>My IDE doesn't pick up the types for the package. Is there anything I can do about it?</summary>
+
+I've noticed this weird problem in some codesandbox.io instances. 
+
+I don't know why it happens but here's what you can do to fix it: create a `react-responsiveness.d.ts` file in `src/` folder, with the following content:
+
+```ts
+declare module "react-responsiveness" {
+    export * from "react-responsiveness" 
+}
+```
+This seems to fix TS.  
+Another fix which sometimes works is to re-start the TS service.
+</details>
 
 ## How it works:
 
