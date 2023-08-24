@@ -1,4 +1,4 @@
-import { ReactResponsivenessBreakpoints } from './types'
+import type { ReactResponsivenessBreakpoints } from './types'
 
 export type PresetName =
   | 'Bootstrap_3'
