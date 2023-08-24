@@ -2,7 +2,10 @@
 <h1>React Responsiveness</h1>
 </div>
 
-<p class="center">
+**What** - Tiny plugin for working with responsiveness intervals, developed with a focus on ease of use (DX) and runtime performance.  
+**Why** - I am a bit obsessed with both performance and ease of use. See [how it works](#how-it-works)
+
+<p>
 <a href="https://www.npmjs.com/package/react-responsiveness"><img src="https://img.shields.io/npm/dt/react-responsiveness.svg?color=f9d342&style=flat-square" alt="Total Downloads"></a>
 <a href="https://www.npmjs.com/package/react-responsiveness"><img src="https://img.shields.io/npm/v/react-responsiveness.svg?color=f9d342&style=flat-square" alt="Latest Release"></a>
 <a href="https://github.com/codemonk-digital/react-responsiveness/blob/main/LICENSE.MD"><img src="https://img.shields.io/npm/l/react-responsiveness.svg?color=f9d342&style=flat-square" alt="License"></a>
@@ -11,10 +14,6 @@
 <img src="https://img.shields.io/badge/SSR-ready-f9d342?style=flat-square" alt="SSR compatibility status"/>
 <a href="https://makeapullrequest.com"><img src="https://img.shields.io/badge/PRs-welcome-f9d342.svg?style=flat-square" alt="PRs Welcome"/></a>
 </p>
-Tiny plugin for working with responsiveness intervals, developed with a focus on ease of use and runtime performance.
-
-I wanted something really easy to use, light as a feather.  
-To be fair, I am a bit obsessed with both performance and ease of use. If curios, scroll down to [How it works](#how-it-works).
 
 ## Installation
 
@@ -37,6 +36,8 @@ npm i react-responsiveness
 ## Usage
 
 #### A) Add provider
+<details>
+    <summary>Example</summary>
 
 ```tsx
 import { ResponsivenessProvider, Presets } from "react-responsiveness";
@@ -53,20 +54,11 @@ const WithResponsiveness = () => (
 export default WithResponsiveness;
 ```
 
-_Note:_ Default breakpoints value is **_already set_** to Bootstrap 5's [responsiveness breakpoints](https://getbootstrap.com/docs/5.3/layout/breakpoints/#available-breakpoints) preset:
+</details>
 
-```tsx
-Presets.Bootstrap_5 = {
-  xs: 0,
-  sm: 576,
-  md: 768,
-  lg: 992,
-  xl: 1200,
-  xxl: 1400,
-};
-```
-
-#### B) Inside provider:
+#### B) Use in any component
+<details>
+    <summary>Example</summary>
 
 ```tsx
 import { useResponsiveness } from "react-responsiveness";
@@ -89,17 +81,33 @@ return (<>
    )}
 </>)
 ```
+</details>
 
 ## Available presets:
 
 `Bootstrap_3`, `Bootstrap_4`, `Bootstrap_5`, `Bulma`, `Chakra`, `Foundation`, `Ionic`, `Material_Design`, `Materialize`, `Material_UI`, `Quasar`, `Semantic_UI`, `Skeleton`, `Tailwind_CSS`, `Windi_CSS`
 
-**Notes:**
+_Notes:_ 
+ - Default breakpoints value is **_already set_** to Bootstrap 5's [responsiveness breakpoints](https://getbootstrap.com/docs/5.3/layout/breakpoints/#available-breakpoints) preset.
+<details>
+    <summary>Preset details</summary>
+
+```tsx
+Presets.Bootstrap_5 = {
+  xs: 0,
+  sm: 576,
+  md: 768,
+  lg: 992,
+  xl: 1200,
+  xxl: 1400,
+};
+```
+</details>
 
 - If you maintain a CSS framework (or use one often) and want its preset added, [open an issue](https://github.com/codemonk-digital/react-responsiveness/issues) or a PR.
 - If you spot any inaccuracy in [presets](https://github.com/codemonk-digital/react-responsiveness/blob/main/lib/presets.ts) (either typo or due to library update), please, let me know, I'll correct it.
 
-## Bespoke intervals:
+## Can I add my own intervals? Of course:
 
 ```tsx
 <ResponsivenessProvider
@@ -112,7 +120,7 @@ return (<>
   // ...
 </ResponsivenessProvider>
 ```
-
+... can then be used as:
 ```tsx
 import { useResponsiveness } from "react-responsiveness";
 
