@@ -157,6 +157,10 @@ Another fix which sometimes works is to re-start the TS service.
 - no global pollution
 - in terms of memory and/or CPU consumption, listening to `window.matchMadia` 'change' events is a few hundred times lighter than using the _"traditional"_ `resize` event listener method
 
+## If you like this package, let others know it works well
+- star the repo
+- consider helping [this answer](https://stackoverflow.com/a/76999879/1891677) get to the top of the list
+
 ## Got issues?
 
 [Let me know!](https://github.com/codemonk-digital/react-responsiveness/issues)
